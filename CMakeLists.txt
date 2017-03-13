@@ -23,7 +23,7 @@ ELSEIF(OpenIGTLink_PROTOCOL_VERSION_2)
   SET(OpenIGTLink_PROTOCOL_VERSION "2")
 ELSE()
   SET(OpenIGTLink_PROTOCOL_VERSION "1")
-ENDIF()
+ENDIF() 
 
 
 #-----------------------------------------------------------------------------

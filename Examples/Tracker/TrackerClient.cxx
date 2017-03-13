@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 
   igtl::TransformMessage::Pointer transMsg;
   transMsg = igtl::TransformMessage::New();
-  transMsg->SetDeviceName("Tracker");
+  //transMsg->SetDeviceName("Tracker");
 
   //------------------------------------------------------------
   // Allocate TimeStamp class
@@ -70,6 +70,7 @@ int main(int argc, char* argv[])
   // loop
   while (1)
     {
+  transMsg->SetDeviceName("Tracker");
     igtl::Matrix4x4 matrix;
     GetRandomTestMatrix(matrix);
     ts->GetTime();
